@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<rss version="2.0">
+
+    <channel>
+        <title>AprendeEnJava</title>
+        <link>https://francolsd.github.io/</link>
+        <description>En esta página web aprenderás a programar ya seas un principiante o alguien ya experimentado</description>
+        <language>ES</language>
+
+     <item>
+        <title>El tiempo en Santa cruz de Tenrife</title>
+        <link>https://www.tiempo.es/santa_cruz_de_tenerife-santa_cruz_de_tenerife-es0st0038.html</link>
+        <guid>https://www.tiempo.es/santa_cruz_de_tenerife-santa_cruz_de_tenerife-es0st0038.html</guid>
+        <description>Aquí podrás ver el tiempo que hace en Santa cruz de Tenerife en tiempo real.</description>
+        
+     </item>
+
+     <item>
+        <title>Curso De Java Básico</title>
+        <link>https://francolsd.github.io/principiante.html</link>
+        <guid>https://francolsd.github.io/principiante.html</guid>
+        <description>Aqui te enseñaremos a programar en Java desde 0.</description>
+        
+     </item>
+
+     <item>
+        <title>PcComponentes</title>
+        <link>https://www.pccomponentes.com/?gclid=EAIaIQobChMItZKM3JT99gIV14jVCh2ojwqsEAAYASAAEgIS7vD_BwE</link>
+        <guid>https://www.pccomponentes.com/?gclid=EAIaIQobChMItZKM3JT99gIV14jVCh2ojwqsEAAYASAAEgIS7vD_BwE</guid>
+        <description>Aquí tienes la mejor tienda de componentes online con los mejores precios actualmente.</description>
+        
+     </item>
+    
+    </channel>
+
+</rss>
