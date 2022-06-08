@@ -1,0 +1,555 @@
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background: teal;
+    width: 1005;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+#menu a:hover{
+   color: wheat;
+   text-shadow: 2px 2px 10px wheat;
+}
+
+.img-menu{
+    height: 60px;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background: teal;
+    border-bottom: 2px solid black;
+}
+
+.logo{
+  color: blue;
+  transition: all .3s ease-in-out;
+}
+
+#menu{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-hamburguesa, #check{
+    display: none;
+}
+
+.navegador a{
+    padding-right: 10px;
+}
+
+#intro{
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/intro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    
+}
+
+#intro h1{
+    color: white;
+    text-align: center;
+}
+
+#seccion1{
+    height: 1200px;
+    width: 100%;
+    padding: 75px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+#seccion1 h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+#seccion1 p{
+    font-size: 30px;
+    text-align: left;
+    padding: 0 30px;
+    
+}
+
+#seccion1 img{
+    padding-top: 20px;
+    height: 700px;
+    width: 50%;
+    border-radius: 2em;
+}
+
+#seccion2{
+    display: flex;
+    justify-content: space-around;
+}
+
+#curso1{
+    height: 400px;
+    width: 30%;
+    text-align: center;
+
+}
+
+#curso1 img{
+    height: 400px;
+}
+
+#curso1 a{
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 10px;
+}
+
+#curso1 p{
+    padding-bottom: 30px;
+}
+
+#curso2{
+    height: 400px;
+    width: 30%;
+    text-align: center;
+}
+
+#curso2 img{
+    height: 400px;
+}
+
+#curso2 a{
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 2em;
+    padding: 10px;
+}
+
+#curso2 p{
+    padding-bottom: 30px;
+}
+
+#seccion2 a:hover{
+    background-color: cadetblue;
+}
+footer{
+    height: 30px;
+    background: violet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 200px;
+    animation-name: anim_footer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim_footer {
+    0%{
+        background: violet;
+    }
+
+    25%{
+        background: steelblue;
+    }
+    75%{
+        background: chartreuse;
+    }
+
+    100%{
+        background: darkblue;
+    }
+}
+footer #nombre{
+    color: white;
+}
+
+#nombre{
+    padding-left: 10px;
+}
+
+#inicio{
+    padding-right: 10px;
+}
+
+
+#cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cursos .par1, .par2, .par3, .par4{
+    text-align: center;
+    margin: 0 200px;
+    padding-bottom: 20px;
+}
+
+.par1 h1, .par2 h1, .par3 h1, .par4 h1{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+#cursos .par1 p, .par2 p, .par3 p, .par4 p{
+   font-weight: bold;
+   font-size: 25px;
+}
+
+#cursos img{
+    height: 700px;
+    width: 90%;
+}
+
+#cursos #img_cur_avanzado{
+    height: 100px;
+    width: 90%;
+}
+
+
+
+
+    /*RESPONSIVE*/
+@media (max-width:1500px){
+
+    #seccion1{
+        margin: auto;
+    }
+    #seccion1 img{
+        height: 500px;
+        width: 75%;
+        padding: auto;
+        margin: auto;
+    }
+
+    #seccion1 p{
+        font-size: 20px;
+        padding: 0 30px;
+    }
+
+    #seccion2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #curso1{
+        height: 400px;
+        width: 70%;
+        margin-bottom: 100px;
+    }
+    #curso1 img{
+        height: 300px;
+        width: 100%;
+    }
+
+    #curso2{
+        height: 400px;
+        width: 70%;
+    }
+    #curso2 img{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+}
+@media (max-width:800px){
+
+    .menu-hamburguesa{
+        display: block;
+        cursor: pointer;
+        position: relative;
+        right: 0%;
+        top: 10%;
+    }
+
+    .navegador{
+        position: fixed;
+        width: 100%;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        background-color: teal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        display: none;
+    }
+
+    #check:checked + .navegador{
+        display: flex;
+    }
+    #intro{
+        justify-content: center;
+    }
+
+    #intro h1{
+        font-size: 25px;
+    }
+
+    #seccion1{
+        height: 700px;
+        text-align: center;
+    }
+
+    #seccion1 img{
+        display: none;
+    }
+
+    #seccion1 p{
+        text-align: justify;
+    }
+
+    #seccion1 h1{
+        margin-bottom: 30px;
+    }
+
+    #seccion2{
+        display: block;
+    }
+
+    #curso1{
+        margin-bottom: 100px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #curso1 img{
+        height: 400px;
+        width: 100%;
+    }
+
+    #curso1 a{
+        height: 80px;
+        border: 1px solid black;
+        border-radius: 2em;
+        padding: 10px;
+    }
+
+    #curso1 p{
+        text-align: justify;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    #curso2{
+        
+        margin-bottom: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #curso2 img{
+        height: 400px;
+        width: 100%;
+    }
+
+    #curso2 a{
+        height: 80px;
+        border: 1px solid black;
+        border-radius: 2em;
+        padding: 10px;
+    }
+
+    #curso2 p{
+        text-align: justify;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    footer{
+        height: 30px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    footer #nombre{
+        color: white;
+    }
+
+    /*CURSO PRNCIPIANTE*/
+
+    #cursos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #cursos .par1, .par2, .par3, .par4{
+        text-align: center;
+        margin: 0 100px;
+        padding-bottom: 20px;
+    }
+    
+    .par1 h1, .par2 h1, .par3 h1, .par4 h1{
+        font-size: 30px;
+        color: white;
+        padding-bottom: 15px;
+    }
+    
+    #cursos .par1 p, .par2 p, .par3 p, .par4 p{
+       font-weight: bold;
+       font-size: 10px;
+    }
+    
+    #cursos img{
+        height: 400px;
+        width: 90%;
+    }
+
+    #cursos #img_cur_avanzado{
+        height: 60px;
+        width: 90%;
+    }
+}
+
+@media (max-width:400px){
+
+    .logo{
+        font-size: 10px;
+        
+    }
+
+    #seccion1{
+        height: 420px;
+    }
+    #seccion1 img{
+        display: none;
+    }
+
+    #seccion1 p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #seccion1 h1{
+        font-size: 20px;
+    }
+
+    #curso1{
+        height: 400px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #curso1 img{
+        height: 200px;
+        width: 100%;
+    }
+
+    #curso1 a{
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 2em;
+        padding: 10px;
+        
+    }
+    #curso1 p{
+        text-align: justify;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    #curso2{
+        height: 400px;
+        text-align: center;
+    }
+
+    #curso2 img{
+        height: 200px;
+        width: 100%;
+    }
+
+    #curso2 a{
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 2em;
+        padding: 10px;
+    }
+
+    #curso2 p{
+        text-align: justify;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    footer{
+        height: 20px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+    }
+
+    footer #nombre{
+        color: white;
+    }
+
+    /*CURSO PRNCIPIANTE*/
+
+    #cursos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #cursos .par1, .par2, .par3, .par4{
+        text-align: center;
+        margin: 0 50px;
+        padding-bottom: 20px;
+    }
+    
+    .par1 h1, .par2 h1, .par3 h1, .par4 h1{
+        font-size: 15px;
+        color: white;
+        padding-bottom: 15px;
+    }
+    
+    #cursos .par1 p, .par2 p, .par3 p, .par4 p{
+       font-weight: bold;
+       font-size: 8px;
+    }
+    
+    #cursos img{
+        height: 200px;
+        width: 90%;
+    }
+
+    #cursos #img_cur_avanzado{
+        height: 30px;
+        width: 90%;
+    }
+}
